@@ -66,8 +66,8 @@ importers:
         specifier: ^1.51.0
         version: 1.63.0
       '@testing-library/jest-dom':
-        specifier: ^6.5.0
-        version: 6.10.0(@testing-library/dom@10.4.2)
+        specifier: ^7.0.1
+        version: 7.0.1(@testing-library/dom@10.4.2)(vitest@2.1.9(@types/node@20.19.43)(jsdom@25.0.1)(sass@1.104.1)(terser@5.51.2))
       '@testing-library/react':
         specifier: ^16.3.0
         version: 16.3.3(@testing-library/dom@10.4.2)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -3365,12 +3365,15 @@ packages:
     resolution: {integrity: sha512-yzr2S9HyAIdhz2/6qHgbs665Q7PKVcDF05vsOlHPxG1mo36gKVesdYVeDLnXgfjJ03CrKRk08knc6+E/9m8v2Q==}
     engines: {node: '>=18'}
 
-  '@testing-library/jest-dom@6.10.0':
-    resolution: {integrity: sha512-HQwu0KaB2zyT0iLzBL+8CLyZDL3KlZlZJ+2iyc9uCUnlJVskJU/UlPuVCyIPhtukjPQdT2QNoR5nCP5FqTmmDQ==}
+  '@testing-library/jest-dom@7.0.1':
+    resolution: {integrity: sha512-oMDTC3oA+6CXSO2JZnvOI7CA6oVub6kij5ggk9ohwye5slmkwxYDXcPOVxgMw/RQlticjtO0C1RZkR97HgrWMw==}
     engines: {node: '>=22', npm: '>=6', yarn: '>=1'}
-    deprecated: Incorrect minor release with breaking changes (Node >=22 and required @testing-library/dom peer). Use 6.9.1 for the 6.x line, or upgrade to 7.0.0.
     peerDependencies:
       '@testing-library/dom': '>=10 <11'
+      vitest: '>= 0.32'
+    peerDependenciesMeta:
+      vitest:
+        optional: true
 
   '@testing-library/react@16.3.3':
     resolution: {integrity: sha512-Uo193NgQbPMz6lrrhtRQQFcMC6Re/ELLFbbuVL30WDlZxlpZf9/lMHTAVxPRLw1q1iu9OJmR1c2BLiENRstdBg==}
@@ -4220,12 +4223,14 @@ packages:
   '@wordpress/jest-console@9.3.0':
     resolution: {integrity: sha512-kqsqg6YV7QF4oidB4pOl4Qoe0QE15hxwLmNQdQ0yMmqILWJ9FpaGsaVG+QslbEtlyQE0uPXtRV03Ep90T+ZlIw==}
     engines: {node: '>=18.12.0', npm: '>=8.19.2'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       jest: '>=30'
 
   '@wordpress/jest-preset-default@14.2.0':
     resolution: {integrity: sha512-EEcC1cSGMXT6PKvRzchVqZH4XbTFcK9itTIY73wii/TtkB26cT34owlme17YTimbT5d0eNHKSIAa6Yi4b02ifg==}
     engines: {node: '>=18.12.0', npm: '>=8.19.2'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       '@babel/core': '>=7'
       jest: '>=30'
@@ -13966,7 +13971,7 @@ snapshots:
       picocolors: 1.1.1
       pretty-format: 27.5.1
 
-  '@testing-library/jest-dom@6.10.0(@testing-library/dom@10.4.2)':
+  '@testing-library/jest-dom@7.0.1(@testing-library/dom@10.4.2)(vitest@2.1.9(@types/node@20.19.43)(jsdom@25.0.1)(sass@1.104.1)(terser@5.51.2))':
     dependencies:
       '@adobe/css-tools': 4.5.0
       '@testing-library/dom': 10.4.2
@@ -13975,6 +13980,8 @@ snapshots:
       dom-accessibility-api: 0.6.3
       picocolors: 1.1.1
       redent: 3.0.0
+    optionalDependencies:
+      vitest: 2.1.9(@types/node@20.19.43)(jsdom@25.0.1)(sass@1.104.1)(terser@5.51.2)
 
   '@testing-library/react@16.3.3(@testing-library/dom@10.4.2)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)':
     dependencies:
