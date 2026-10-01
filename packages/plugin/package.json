@@ -24,7 +24,7 @@
     "@wordpress/blocks": "^16.0.0",
     "@wordpress/components": "^40.1.0",
     "@wordpress/core-data": "^7.1.0",
-    "@wordpress/data": "^10.1.0",
+    "@wordpress/data": "^10.56.0",
     "@wordpress/editor": "^14.1.0",
     "@wordpress/i18n": "^6.28.0",
     "@wordpress/plugins": "^7.1.0",
